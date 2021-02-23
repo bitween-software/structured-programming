@@ -1,0 +1,27 @@
+namespace: Tests
+
+suites:
+    unit:
+        actor: UnitTester
+        path: unit
+        modules:
+            enabled:
+                - Asserts
+
+    acceptance:
+        actor: AcceptanceTester
+        path: acceptance
+        modules:
+            enabled:
+                - Asserts
+
+settings:
+    shuffle: true
+    lint: true
+
+paths:
+    tests: tests
+    output: tests/_output
+    support: tests/_support
+    data: tests
+     

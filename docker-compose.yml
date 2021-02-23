@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  php:
+    image: thecodingmachine/php:8.0-v4-apache
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      APACHE_DOCUMENT_ROOT: '/var/www/html/public'
+      PHP_EXTENSION_PDO_SQLITE: 1
+      STARTUP_COMMAND_1: 'composer install'
+      STARTUP_COMMAND_2: 'touch database.sqlite'

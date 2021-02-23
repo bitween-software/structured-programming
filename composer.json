@@ -1,0 +1,30 @@
+{
+    "name": "bitween/functional-decomposition",
+    "description": "Using functional decomposition and things learned from structured programming inside an actual PHP web application.",
+    "type": "library",
+    "keywords": ["bitween", "Jarno Vogelzang", "functional decomposition", "structured programming", "clean software architecture"],
+    "authors": [
+        {
+            "name": "Jarno Vogelzang - Bitween",
+            "email": "info@bitween.tech"
+        }
+    ],
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-asserts": "^1.3",
+        "friendsofphp/php-cs-fixer": "^2.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bitween\\StructuredProgramming\\": "src",
+            "Tests\\Acceptance\\": "tests/acceptance",
+            "Tests\\Unit\\": "tests/unit"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "symfony/validator": "^5.2",
+        "illuminate/validation": "^8.28",
+        "doctrine/orm": "^2.8"
+    }
+}

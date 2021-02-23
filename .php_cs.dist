@@ -1,0 +1,14 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__)
+    ->exclude('tests/_support/_generated');
+
+$config = new PhpCsFixer\Config();
+return $config->setRules([
+        '@Symfony' => true,
+        'strict_param' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'no_unused_imports' => true
+    ])
+    ->setFinder($finder);
