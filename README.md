@@ -15,6 +15,8 @@ Now, you have access to 2 browser pages:
 - [localhost/form.html](http://localhost/form.html): The form for submitting posts
 - [localhost/get.php](http://localhost/get.php): The HTML table for all the posts
 
-In order to run the tests, issue the following command inside your Docker container:
+### Testing
 
-    $ vendor/bin/codecept run
+In order to test the application, issue the following command inside your Docker container:
+
+    $ bin/test

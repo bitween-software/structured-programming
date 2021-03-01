@@ -12,7 +12,8 @@
     "require-dev": {
         "codeception/codeception": "^4.1",
         "codeception/module-asserts": "^1.3",
-        "friendsofphp/php-cs-fixer": "^2.18"
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "phpstan/phpstan": "^0.12.80"
     },
     "autoload": {
         "psr-4": {
@@ -25,6 +26,7 @@
         "php": "^8.0",
         "symfony/validator": "^5.2",
         "illuminate/validation": "^8.28",
-        "doctrine/orm": "^2.8"
+        "doctrine/orm": "^2.8",
+        "ext-json": "*"
     }
 }

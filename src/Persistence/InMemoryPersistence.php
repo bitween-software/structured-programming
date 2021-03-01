@@ -6,6 +6,9 @@ use Bitween\StructuredProgramming\Entity\Post;
 
 class InMemoryPersistence implements Persistence
 {
+    /**
+     * @var Post[]
+     */
     private array $storage = [];
 
     public function store(Post $post): void

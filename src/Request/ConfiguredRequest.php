@@ -4,6 +4,9 @@ namespace Bitween\StructuredProgramming\Request;
 
 class ConfiguredRequest implements Request
 {
+    /**
+     * @param mixed[] $data
+     */
     public function __construct(private array $data)
     {
     }

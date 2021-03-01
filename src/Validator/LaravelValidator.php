@@ -28,6 +28,9 @@ class LaravelValidator implements Validator
         }
     }
 
+    /**
+     * @return string[]
+     */
     private function getValidationValues(Post $post): array
     {
         return [

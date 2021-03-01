@@ -1,0 +1,4 @@
+#!/bin/bash
+vendor/bin/phpstan analyse
+vendor/bin/php-cs-fixer fix --dry-run --allow-risky=yes
+vendor/bin/codecept run
